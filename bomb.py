@@ -4,6 +4,7 @@ import pygame
 class Bomb(pygame.sprite.Sprite):
     def __init__(self, x, y, size, grid_width, grid_height, texture):
         super().__init__()
+
         self.image = pygame.Surface((size, size))
         #self.image.fill((255, 0, 0))
         self.image = pygame.image.load(texture)
